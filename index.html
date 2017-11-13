@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - getElementById</title>
+</head>
+<body>
+    O JavaScript tem 3 formas de ser escrito em um site.
+    <ul>
+        <li>Primeira forma:</li>
+            <p>Antes da tag head ser finalizada, coloca uma tag script com fechamento, assim escrevendo dentro da mesma o código JavaScript.
+            <br />
+            Se o JavaScript for inserido da forma citada acima, o JavaScript será carregado antes do seu html.
+            </p>
+        <li>Segunda forma:</li>
+            <p>Usar uma tag script com fechamento no final do body e dentro desta tag, escrever seu código JavaScript.
+            <br />
+            Se for inserido dessa forma, será carregado por último na página.    
+            </p>
+        <li>Terceira forma:</li>
+            <p>Dentro de uma tag script no final do body você chamar um arquivo externo.
+            <br />
+            Se for inserido dessa forma, ele vai ficar buscando um arquivo externo de JavaScript para o site.
+            </p>
+    </ul>
+
+    <script>
+        
+        console.log(
+            document.getElementById("time-grande").innerHTML
+        )
+        
+    </script>
+    
+</body>
+</html>
