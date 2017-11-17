@@ -7,6 +7,7 @@
     <title>DOM - getElementById</title>
 </head>
 <body>
+    <!--Aqui eu explico como que funciona o Javascript na Web e suas formas de serem escritas em um site.-->
     O JavaScript tem 3 formas de ser escrito em um site.
     <ul>
         <li>Primeira forma:</li>
@@ -25,12 +26,14 @@
             Se for inserido dessa forma, ele vai ficar buscando um arquivo externo de JavaScript para o site.
             </p>
     </ul>
-
+    
+    <!--Aqui eu declaro algumas divs para serem chamadas pelo javascript.-->
     <div id="time-pequeno">São Paulo</div>
     <div id="time-grande">Corinthians</div>
 
+    <!--Aqui é onde o javascript foi escrito, é aqui que acontece toda a mágica. O javascript só pode ser visto no navegador quendo você inspeciona a página com a tecla f12.-->
     <script>
-        
+    /*Aqui no javascript o código vai chamar o elemento div que estiver com o ID "time-grande" através do getElementById*/    
         console.log(
             document.getElementById("time-grande").innerHTML
         )
