@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM - querySelector</title>
+</head>
+<body>
+    <!--Criei alguns elementos em html para ver como os mesmos se comportam com o querySelector-->
+    <div id="teste1">teste 1</div>
+    <div class="teste2">teste 22</div>
+    <div class="teste2">teste 23</div>
+    <div class="teste2">teste 24</div>
+    <p class="teste3">teste 3</p>
+
+    <script>
+        console.log(
+            /*querySelector de ID vai buscar o elemento através do id do mesmo.*/
+            document.querySelector("#teste1")
+        )
+        console.log(
+            /*querySelector de Class vai buscar o elemento através da class do mesmo, porém de você tiver mais de um elemento com a mesma class, o retorno do querySelector será do primeiro somente.*/
+            document.querySelector(".teste2")
+        )
+        console.log(
+            /*querySelector de Tag name vai buscar o elemento atraves da tag name e você ainda tme a possibilidade de adicionar uma class ou um id dentro dessa tag name no querySelector.*/
+            document.querySelector("p.teste3")
+        )
+    </script>
+</body>
+</html>
